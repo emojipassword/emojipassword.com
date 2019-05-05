@@ -1,0 +1,48 @@
+baseURL = "http://emojipassword.com/"
+languageCode = "en-us"
+title = "Emoji Password"
+theme = "ezhil"
+
+pygmentsstyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = "UA-123-45"
+disqusShortname = "localhost"
+
+[params]
+	subtitle = "An [ongoing](/about) survey of support for emoji in passwords across the Web."
+	# Number of posts to show in recent posts list.
+	recentPostsCount = 10
+	# Content types which are excluded from recent posts and archive page.
+	excludedTypes = ["page"]
+	disableDisqusTypes = ["page","post"]
+	featherIconsCDN = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/PasswordEmoji"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"
