@@ -1,13 +1,16 @@
 install:
+- pip install --user awscli
 - wget https://github.com/gohugoio/hugo/releases/download/v0.55.5/hugo_0.55.5_Linux-64bit.deb
 - sudo dpkg -i hugo_0.55.5_Linux-64bit.deb
 - hugo version
 
 before_script:
 - rm -rf public
+- hugo
 
 script:
-- hugo
+- aws s3 sync public/ s3://www.emojipassword.com --acl public-read --delete
+- aws cloudfront create-invalidation --distribution-id E3D3I6Q7AO4WAV --paths '/*'
 
 branches:
  only:
