@@ -16,7 +16,7 @@ disqusShortname = "localhost"
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
 	excludedTypes = ["page"]
-	disableDisqusTypes = ["page","post"]
+	disableDisqusTypes = ["page","post","about"]
 	featherIconsCDN = true
 
 [[menu.main]]
