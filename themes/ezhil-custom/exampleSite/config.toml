@@ -1,7 +1,7 @@
-baseURL = "http://emojipassword.com/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Emoji Password"
-theme = "ezhil-custom"
+title = "Ezhil"
+theme = "ezhil"
 
 pygmentsstyle = "vs"
 pygmentscodefences = true
@@ -11,12 +11,12 @@ googleAnalytics = "UA-123-45"
 disqusShortname = "localhost"
 
 [params]
-	subtitle = "An [ongoing](/about) survey of support for emoji in passwords across the Web."
+	subtitle = "Clean and minimal personal [blog theme for Hugo](https://github.com/vividvilla/ezhil)"
 	# Number of posts to show in recent posts list.
 	recentPostsCount = 10
 	# Content types which are excluded from recent posts and archive page.
 	excludedTypes = ["page"]
-	disableDisqusTypes = ["page","post","about"]
+	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
 
 [[menu.main]]
@@ -34,10 +34,20 @@ name = "About"
 url = "/about"
 weight = 3
 
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/vividvilla/ezhil"
+
 [[params.social]]
 name = "Twitter"
 icon = "twitter"
-url = "https://twitter.com/PasswordEmoji"
+url = "https://twitter.com/gohugoio"
 
 [[params.social]]
 name = "RSS"
